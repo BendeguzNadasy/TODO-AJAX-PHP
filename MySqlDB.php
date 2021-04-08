@@ -14,14 +14,13 @@ class MySqlDB {
         $this->db_felhnev = "root";
         $this->db_jelszo = "";
         $this->db_nev = "teendok";
+//        $this->db_szerver = "tanulo25.szf1a.oktatas.szamalk-szalezi.hu";
+//        $this->db_felhnev = "c1_tanulo25szf1a";
+//        $this->db_jelszo = "_tanulo25szf1a";
+//        $this->db_nev = "c1ABtanulo25szf1a";
         $this->kapcsolat();
     }
 
-    ////csefalvay remote
-////$host = "web1.szamalk-szalezi.hu";
-////$fhnev = "c1csefalvay";
-////$jelszo = "csefalvay";
-////$adatbazis = "c1csefalvay";
     public function kapcsolat() {
         $this->kapcs = new mysqli($this->db_szerver, $this->db_felhnev, $this->db_jelszo, $this->db_nev);
         $this->kapcs->set_charset('utf8');

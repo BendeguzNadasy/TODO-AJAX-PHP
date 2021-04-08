@@ -32,9 +32,9 @@
                 <div id="valaszt">
                     <label for="rend">Rendezés:</label>
 
-                    <select name="rend" id="cars">
-                        <option class="rendez" id="todorend">Teendő szerint</option>
-                        <option class="rendez" id="datumrend">Dátum szerint</option>
+                    <select name="rend" id="rendi">
+                        <option value="todo">Teendő szerint</option>
+                        <option value="datum">Dátum szerint</option>
                     </select>
                     <input type="button" id="btnBetolt" name="betolt" value="Betölt">
                 </div>
